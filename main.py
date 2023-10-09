@@ -29,8 +29,13 @@ main_json={
 }
 
 # the service_file should be a pth to a jason file that is made using this (from  to 5:05): video:https://www.youtube.com/watch?v=ZVfzDOWiOQ0
+
 gc = pygsheets.authorize(service_file='silicon-garage-278511-bf125cd90f67.json')# 'silicon-garage-278511-bf125cd90f67.json' is a path
+
 sh = gc.open('robocup test') #the parameter MUST be the same name that you fixed in the google sheet 
+
 wks = sh[0] #this selects the first worksheet
+
 df=pd.DataFrame(data=main_json["Teams"])
+
 wks.set_dataframe(df,(1,2)) #(1,2) means :start from column 1 row 2
