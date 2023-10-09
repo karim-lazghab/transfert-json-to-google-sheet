@@ -30,7 +30,7 @@ main_json={
 
 # the service_file should be a pth to a jason file that is made using this (from  to 5:05): video:https://www.youtube.com/watch?v=ZVfzDOWiOQ0
 
-gc = pygsheets.authorize(service_file='silicon-garage-278511-bf125cd90f67.json')# 'silicon-garage-278511-bf125cd90f67.json' is a path
+gc = pygsheets.authorize(service_file='silicon-garage-278511-bf125cd90f67.json')# 'silicon-garage-278511-bf125cd90f67.json' is my path to the json file
 
 sh = gc.open('robocup test') #the parameter MUST be the same name that you fixed in the google sheet 
 
