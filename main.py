@@ -28,7 +28,7 @@ main_json={
     }
 }
 
-# the service_file should be a pth to a jason file that is made using this (from  to 5:05): video:https://www.youtube.com/watch?v=ZVfzDOWiOQ0
+# the service_file should be a path to a json file that is made using this video(from  to 5:05):https://www.youtube.com/watch?v=ZVfzDOWiOQ0
 
 gc = pygsheets.authorize(service_file='silicon-garage-278511-bf125cd90f67.json')# 'silicon-garage-278511-bf125cd90f67.json' is my path to the json file
 
