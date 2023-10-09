@@ -39,4 +39,4 @@ wks = sh[0] #this selects the first worksheet
 df=pd.DataFrame(data=main_json["Teams"])
 
 wks.set_dataframe(df,(1,2)) #(1,2) means :start from column 1 row 2
-#the google sheet should be closed 
+#the google sheet should be closed on browser 
